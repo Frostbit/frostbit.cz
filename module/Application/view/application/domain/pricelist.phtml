@@ -1,27 +1,9 @@
-<strong>Ceník domén</strong>
-<hr>
-<?php if($group) { ?>
-Skupina: <?php echo $group; ?>
-<?php } ?>
-<hr>
-<h2>Domény</h2>
-<table>
-	<tr>
-		<th>id</th>
-		<th>tld</th>
-		<th>description</th>
-		<th>reg_price</th>
-		<th>mtn_price</th>
-		<th>status</th>
-	</tr>
-	<?php foreach($domains as $domain) { ?>
-	<tr>
-		<td><?php echo $domain->id; ?></td>
-		<td><?php echo $domain->tld; ?></td>
-		<td><?php echo $domain->description; ?></td>
-		<td><?php echo $domain->reg_price; ?> <?php echo $this->translate('currency_code'); ?></td>
-		<td><?php echo $domain->mtn_price; ?> <?php echo $this->translate('currency_code'); ?></td>
-		<td><?php if($domain->status == 1) { echo $this->translate('active'); } else { echo $this->translate('unactive'); } ?></td>
-	</tr>
-	<?php } ?>
-</table>
+            <div class="row customers">
+                <div class="col-md-12">
+                    <span class="title">Co o nás tvrdí zákazníci</span>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate nec neque quis posuere. Aliquam a nulla vel felis venenatis interdum. Narhoncus lobortis tortor, tempor egestas mi vestibulum a. Nunc vitae augue ac lorem fermentum consectetur. Vestibulum egestas.</p>
+                    <img src="images/customers/sign1.png" alt=""><br />
+                    <span class="name">Enya Volšanská</span><br />
+                    <span class="sub">Hlídací maniak v Můj Domov, s.r.o.</span>
+                </div>
+            </div>

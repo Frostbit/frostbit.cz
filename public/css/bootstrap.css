@@ -223,7 +223,7 @@ table {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -327,7 +327,7 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus {
@@ -822,7 +822,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -2251,17 +2251,19 @@ textarea.input-lg {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 12px;
   margin-bottom: 0;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.428571429;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
+  text-transform: uppercase;
   border: 1px solid transparent;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
   border-radius: 4px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2487,7 +2489,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
+  background: url('../images/btn-success.png') repeat-x top left;
   border-color: #4cae4c;
 }
 
@@ -2498,7 +2500,7 @@ fieldset[disabled] .btn-danger.active {
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
   background-color: #47a447;
-  border-color: #398439;
+  border-color: #5e995a;
 }
 
 .btn-success:active,
@@ -2603,7 +2605,7 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -6345,10 +6347,7 @@ button.close {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  line-height: 1;
+
 }
 
 .carousel-inner > .active,
@@ -6500,13 +6499,14 @@ button.close {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 70px;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 120px;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 

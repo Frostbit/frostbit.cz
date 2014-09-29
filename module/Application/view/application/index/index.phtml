@@ -1,44 +1,58 @@
-<div class="jumbotron">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
-</div>
+            <div class="row products">
+                <div class="col-md-6">
+                    <div class="product">
+                        <img src="images/products/domain_icon.png" alt="Domains">
+                        <h2>Domény</h2>
+                        <ul>
+                            <li><strong>Přesměrování zdarma</strong> bez potřeby hostingu</li>
+                            <li>Snadná správa <strong>DNS záznamů</strong></li>
+                            <li><strong>Zabezpečení domén</strong> pomocí DNSSEC</li>
+                            <li>Registrace domény <strong>během okamžiku</strong></li>
+                        </ul>
 
-<div class="row">
+                        <span class="price_txt">již od</span> <span class="price">199,-</span>
+                        <span class="more_info">
+                            <a href="" class="btn btn-success">více informací</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product">
+                        <img src="images/products/webhosting_icon.png" alt="Domains">
+                        <h2>Webhosting</h2>
+                        <ul>
+                            <li><strong>Neomezený počet</strong> zaparkovaných domén</li>
+                            <li>Podpora PHP 5.3, 5.4 & 5.5</li>
+                            <li><strong>Emailové schránky zdarma</strong> v rámci hostingu</li>
+                            <li>Neomezený počet <strong>MySQL databází s podporou innoDB</strong></li>
+                        </ul>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Follow Development') ?></h3>
+                        <span class="price_txt">již od</span> <span class="price">29,-</span>
+                        <span class="more_info">
+                            <a href="" class="btn btn-success">více informací</a>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Discover Modules') ?></h3>
+            <div class="row customers">
+                <div class="col-md-12">
+                    <span class="title">Co o nás tvrdí zákazníci</span>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                         <div class="carousel-inner">
+                            <div class="item active">
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate nec neque quis posuere. Aliquam a nulla vel felis venenatis interdum. Narhoncus lobortis tortor, tempor egestas mi vestibulum a. Nunc vitae augue ac lorem fermentum consectetur. Vestibulum egestas.</p>
+                                <img src="images/customers/sign1.png" alt=""><br />
+                                <span class="name">Enya Volšanská</span><br />
+                                <span class="sub">Hlídací maniak v Můj Domov, s.r.o.</span>  
+                            </div>
+                            <div class="item">
+                                <p class="description">Maecenas consectetur libero nunc, sed consequat sem molestie sed. Sed accumsan eros sit amet interdum facilisis. Cras a molestie sapien. Donec sit amet semper metus. Curabitur sit amet neque nec ligula mattis feugiat in ac lectus. Nunc lobortis mollis diam id tincidunt. </p>
+                                <img src="images/customers/sign1.png" alt=""><br />
+                                <span class="name">Darth Vader</span><br />
+                                <span class="sub">CEO at death Star, Inc.</span>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Help &amp; Support') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
-</div>
