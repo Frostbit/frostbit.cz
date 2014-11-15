@@ -27,4 +27,9 @@ return array(
                     => 'Zend\Db\Adapter\AdapterServiceFactory',
         ),
     ),
+    'subreg' => array(
+        'api_url' => 'https://api.subreg.cz/listen.php:8080',
+        'username' => 'frostbitcz',
+        'password' => ''
+    ),
 );
