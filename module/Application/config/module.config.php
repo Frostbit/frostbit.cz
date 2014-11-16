@@ -20,6 +20,20 @@ return array(
                         'action'     => 'index',
                     ),
                 ),
+                'child_routes' => array(
+                    'language' => array(
+                    'type'    => 'Segment',
+                    'options' => array(
+                        'route' => '[/:lang]',
+                        'defaults' => array(
+                            'lang' => 'cs',
+                        ),
+                        'constraints' => array(
+                            'lang' => '(cs|sk|en)?',
+                        ),
+                    ),
+                ),
+                ),
             ),
             'domain' => array(
                  'type'    => 'segment',
@@ -34,6 +48,20 @@ return array(
                          'action'     => 'index',
                      ),
                  ),
+                 'child_routes' => array(
+                    'language' => array(
+                    'type'    => 'Segment',
+                    'options' => array(
+                        'route' => '[/:lang]',
+                        'defaults' => array(
+                            'lang' => 'cs',
+                        ),
+                        'constraints' => array(
+                            'lang' => '(cs|sk|en)?',
+                        ),
+                    ),
+                ),
+                ),
              ),
             'domain-pricelist' => array(
                  'type'    => 'segment',

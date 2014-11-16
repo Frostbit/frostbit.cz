@@ -11,8 +11,6 @@ namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
-use Application\Model\Domain;
-use Application\Model\DomainTable;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
 
@@ -39,26 +37,6 @@ class Module
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
             ),
-        );
-    }
-
-    public function getServiceConfig()
-    {
-        return array(
-            'factories' => array(
-                'Application\Model\DomainTable' =>  function($sm) {
-                    $tableGateway = $sm->get('DomainTableGateway');
-                    $table = new DomainTable($tableGateway);
-                    return $table;
-                },
-                'DomainTableGateway' => function ($sm) {
-                    $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
-                    $resultSetPrototype = new ResultSet();
-                    $resultSetPrototype->setArrayObjectPrototype(new Domain());
-                    return new TableGateway('domain_pricelist', $dbAdapter, null, $resultSetPrototype);
-                },
-            ),
-
         );
     }
 }

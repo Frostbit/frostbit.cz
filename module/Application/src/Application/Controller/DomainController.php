@@ -14,17 +14,6 @@ use Zend\View\Model\ViewModel;
 
 class DomainController extends AbstractActionController
 {
-    protected $domainTable;
-
-    public function getDomainTable()
-    {
-        if (!$this->domainTable) {
-            $sm = $this->getServiceLocator();
-            $this->domainTable = $sm->get('Application\Model\DomainTable');
-        }
-        return $this->domainTable;
-    }
-
     public function indexAction()
     {
         return new ViewModel();
@@ -32,9 +21,6 @@ class DomainController extends AbstractActionController
 
     public function pricelistAction()
     {
-    	return new ViewModel(array(
-    		'group' => $this->getEvent()->getRouteMatch()->getParam('group'),
-            'domains' => $this->getDomainTable()->fetchAll(),
-    	));
+    	return new ViewModel(array());
     }
 }
