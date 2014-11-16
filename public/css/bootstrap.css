@@ -319,23 +319,6 @@ textarea {
   line-height: inherit;
 }
 
-a {
-  color: #428bca;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #2a6496;
-  text-decoration: none;
-}
-
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
 img {
   vertical-align: middle;
 }
@@ -2489,8 +2472,8 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-success {
   color: #ffffff;
-  background: url('../images/btn-success.png') repeat-x top left;
-  border-color: #4cae4c;
+  background: #7cb31b;
+  border-color: #517d04;
 }
 
 .btn-success:hover,
@@ -6341,6 +6324,8 @@ button.close {
 .carousel-inner > .item {
   position: relative;
   display: none;
+  text-align: center;
+  padding-top: 25px;
   -webkit-transition: 0.6s ease-in-out left;
           transition: 0.6s ease-in-out left;
 }
