@@ -1,0 +1,98 @@
+        <!-- Webhosting -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="webhosting">
+                    <h1>Webhosting</h1>
+                    <p class="headline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut malesuada diam, nec lobortis massa. Integer convallis justo lacus, in varius lorem consectetur commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean laoreet vestibulum ornare. In faucibus eleifend ipsum at luctus. Ut semper imperdiet laoreet.</p>
+                </div>
+            </div>
+
+            <!-- Hosting packages -->
+            <div class="col-md-12">
+                <div class="webhosting-packages">
+
+                    <!-- Slider -->
+                    <div class="slider"></div>
+                    
+                    <div class="package1">
+                        <div class="headline">Start <span class="price">Již od 20 CZK</span></div>
+                    </div>
+                    
+                    <div class="package2">
+                        <div class="headline">Medium <span class="price">Již od 60 CZK</span></div>
+                    </div>
+                    
+                    <div class="package3">
+                        <div class="headline">Business <span class="price">Již od 100 CZK</span></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Our benefits -->
+            <div class="col-md-12">
+                <div class="page-title">
+                    <h2>Proč si zařídit webhosting u nás</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Rychlé načítání prezentací díky SSD</h2>
+                    <img src="/images/icons/64px/rocket.png" alt="SSD disky">
+                    <p>Vaše webová prezentace se díky SSD diskům bude načítat <br>podstatně rychleji.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Přehledná správa služeb</h2>
+                    <img src="/images/icons/64px/browser.png" alt="Best UI">
+                    <p>Veškeré Vaše služby si lehce můžete spravovat přes naši <br>klientskou sekci.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Zálohujeme denně</h2>
+                    <img src="/images/icons/64px/download.png" alt="Backup available">
+                    <p>Data zálohujeme 1x denně a pokud se stane cokoliv, vždy máte <br>možnost data pár kliknutím obnovit.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Lidská podpora</h2>
+                    <img src="/images/icons/64px/megaphone2.png" alt="Support">
+                    <p>Jsme lidi a proto Vám nabízíme lidský přístup a žádné <br>tabulkové řešení.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Jeden prostor</h2>
+                    <img src="/images/icons/64px/piechart.png" alt="Disk space">
+                    <p>Jeden balíček, jeden prostor. Rozdělte si prostor jak potřebujete <br>mezi několika doménami, MySQL databázemi, FTP nebo emaily.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Čas jsou peníze</h2>
+                    <img src="/images/icons/64px/hourglass.png" alt="Time is money">
+                    <p>Zřízení hostingových služeb ihned po dokončení objednávky. <br>Čas jsou peníze, proto Vás nenecháme čekat.</p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+         $(function() {
+            $( ".slider" ).slider({
+                orientation: "horizontal",
+                range: "min",
+                min: 0.5,
+                max: 20,
+                value: 2,
+                step: 0.5,
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( ui.value );
+                }
+            });
+            $( "#amount" ).val( $( "#slider-vertical" ).slider( "value" ) );
+        });
+        </script>

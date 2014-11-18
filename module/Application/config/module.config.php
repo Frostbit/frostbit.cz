@@ -77,6 +77,20 @@ return array(
                      ),
                  ),
              ),
+            'webhosting' => array(
+                'type'  => 'segment',
+                 'options' => array(
+                     'route'    => '/webhosting[/][/:sale]',
+                     'constraints' => array(
+                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                         'id'     => '[0-9]+',
+                     ),
+                     'defaults' => array(
+                         'controller' => 'Application\Controller\Webhosting',
+                         'action'     => 'index',
+                     ),
+                 ),
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -132,6 +146,7 @@ return array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\Domain' => 'Application\Controller\DomainController',
+            'Application\Controller\Webhosting' => 'Application\Controller\WebhostingController'
         ),
     ),
     'view_manager' => array(

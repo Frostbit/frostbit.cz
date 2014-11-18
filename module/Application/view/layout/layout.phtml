@@ -7,13 +7,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
-<link href="/css/main.css?version=105" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v108" media="screen" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]><script type="text/javascript" src="/js/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="/js/respond.min.js"></script><![endif]-->
 <script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="<?php if(!$this->isHomepage) { echo "tiny-header"; } ?>">
     <div class="container">
         <div class="row">
             <div class="col-md-5 logo">
@@ -25,7 +26,7 @@
             <div class="col-md-7 navigation">
                 <ul>
                     <li><a href="#">Domény</a></li>
-                    <li><a href="#">Webhosting</a></li>
+                    <li><a href="/webhosting">Webhosting</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </div>
@@ -84,6 +85,6 @@
 
     </div>
 
-    <script type="text/javascript" src="/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/main.min.js?v10"></script>
 </body>
 </html>
