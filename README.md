@@ -1,4 +1,8 @@
 <h1>Frostbit.cz</h1>
+<img src="http://dev.frostbit.cz/images/logo_icon.png" align="right">
+<b>Live version:</b> <a href="http://dev.frostbit.cz">dev.frostbit.cz</a> 
+
+<hr>
 
 <h2>Nástroje</h2>
 <ul>
