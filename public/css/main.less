@@ -18,6 +18,14 @@ a {
   text-decoration: none;
 }
 
+/* Highlights */
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #282828;
+  text-align: center;
+}
+
 /* Logo */
 .logo {
   margin-top: 10px;
@@ -251,7 +259,6 @@ a {
 
 .webhosting-packages {
   width: 100%;
-  text-align: center;
   border-radius: 3px;
   border: 5px solid #f1f1f1;
   margin-bottom: 30px;
@@ -281,12 +288,11 @@ a {
       font-size: 18px;
       font-weight: 700;
       cursor: pointer;
+      text-align: center;
     }
   }
   .package2 {
     width: calc(100% / 3);
-    background: #000000;
-    height: 100%;
     float: left;
 
     .headline {
@@ -298,6 +304,7 @@ a {
       font-size: 18px;
       font-weight: 700;
       cursor: pointer;
+      text-align: center;
     }
   }
   .package3 {
@@ -313,7 +320,25 @@ a {
       font-size: 18px;
       font-weight: 700;
       cursor: pointer;
+      text-align: center;
     }
+  }
+
+  ul {
+    list-style-image: url('../images/products/check_icon.png');
+    font-size: 14px;
+    font-weight: 100;
+    color: #5b5b5b;
+    padding-left: 25px;
+    margin-bottom: 15px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .description {
+    padding: 20px;
   }
 }
 
@@ -322,6 +347,97 @@ a {
   border-radius: 3px;
   border: 5px solid #f1f1f1;
   margin-bottom: 60px;
+}
+
+.webhosting-keywords {
+  div {
+    margin: 40px 0 40px 0;
+  }
+}
+
+.pricing-table {
+  width: 100%;
+  border-radius: 3px;
+  border: 5px solid #f1f1f1;
+
+  thead th {
+    background: #42b9f1;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #fff;
+    font-size: 14px;
+  }
+
+  tr:nth-of-type(odd) td {
+    background: #f1f1f1;
+  }
+
+  .headline {
+    background: #2c9ed3 !important;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.25);
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px;
+  }
+}
+
+.button-framed {
+  border: 1px solid #2c9ed3;
+  background: #fff;
+  padding: 10px;
+  color: #2c9ed3;
+  text-transform: uppercase;
+  cursor: pointer;
+  -o-transition:color .0.5s ease-out, background 0.5s ease-in;
+  -ms-transition:color .0.5s ease-out, background 0.5s ease-in;
+  -moz-transition:color .0.5s ease-out, background 0.5s ease-in;
+  -webkit-transition:color .0.5s ease-out, background 0.5s ease-in;
+  transition:color .0.5s ease-out, background 0.5s ease-in;
+
+  .add {
+    padding-left: 40px;
+    background: #fff url('../images/icons/add.png') 50% 10px;
+  }
+}
+
+.button-framed:hover {
+  background: #2c9ed3;
+  color: #fff;
+}
+
+.webhosting-order {
+  .input-framed {
+    border: 1px solid #2c9ed3;
+    padding: 10px;
+    color: #2c9ed3;
+    text-transform: uppercase;
+  }
+
+  .col {
+    width: 50%;
+    float: left;
+  }
+
+  .price-text {
+    color: #8e8e8e;
+    font-size: 18px;
+  }
+
+  .price {
+    color: #454545;
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
 .webhosting-bonus {
