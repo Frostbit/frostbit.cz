@@ -1,0 +1,330 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %}Webhosting - Frostbit.cz{% endblock %}
+
+{% block content %}
+        <!-- Webhosting -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="webhosting">
+                    <h1>Webhosting</h1>
+                    <p class="headline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut malesuada diam, nec lobortis massa. Integer convallis justo lacus, in varius lorem consectetur commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean laoreet vestibulum ornare. In faucibus eleifend ipsum at luctus. Ut semper imperdiet laoreet. Locale: {{ locale }}</p>
+                </div>
+            </div>
+
+            <!-- Hosting packages -->
+            <div class="col-md-12">
+                <div class="webhosting-packages">
+                    
+                    <div class="package1">
+                        <div class="headline" id="pg1">Start <span class="price">Již od 20 CZK</span></div>
+                        <div class="description">
+                            <ul>
+                                <li>Jsem uživatel</li>
+                                <li>Ideální pro blogy, osobní stránky a menší projekty.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="package2">
+                        <div class="headline" id="pg2">Medium <span class="price">Již od 60 CZK</span></div>
+                        <div class="description">
+                            <ul>
+                                <li>Jsem podnikatel, nebo menší firma.</li>
+                                <li>Ideální pro aplikace menších firem.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="package3">
+                        <div class="headline" id="pg3">Business <span class="price">Již od 100 CZK</span></div>
+                        <div class="description">
+                            <ul>
+                                <li>Mám větší firmu.</li>
+                                <li>Ideální pro větší firmy s většími daty.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!-- Space slider -->
+            <div class="col-md-12">
+                <div class="slider-frame">
+                    <div class="slider"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="webhosting-order text-center">
+                    <div class="col text-left">
+                        <span class="price-text"><span class="price">30 CZK</span> / měsíc</span>
+                    </div>
+                    <div class="col text-right">
+                        <input type="text" name="space" class="input-framed" style="width: 80px;" id="space" />
+                        <button type="submit" class="button-framed">
+                            <i class="fa fa-plus" style="margin-right: 5px;"></i> Přidat do košíku
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hosting parameters -->
+            <div class="col-md-12">
+                <div class="page-title">
+                    <h2>Parametry hostingu</h2>
+                </div>
+            </div>
+
+            <div class="webhosting-keywords">
+                <div class="col-md-4 text-center">
+                    <img src="/images/webhosting/icons/cloud.png" alt="MySQL a PHP"><br />
+                    <h3>MySQL databáze a PHP</h3>
+                    <p>Neomezený počet databází MySQL s podporou uložiště innoDB a PHP 5.3, 5.4 nebo 5.5.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="/images/webhosting/icons/planet.png" alt="Neomezený počet domén"><br />
+                    <h3>Neomezený počet domén</h3>
+                    <p>Neomezený počet hostovaných domén pro webové stránky nebo emaily.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="/images/webhosting/icons/mail.png" alt="Emaily"><br />
+                    <h3>Neomezeně emailových schránek</h3>
+                    <p>Neomezený počet emailových schránek, aliasů nebo přesměrování.</p>
+                </div>
+
+                <!-- Parameters table -->
+                <div class="col-md-12" id="params" style="display: none;">
+                    <table class="pricing-table">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="headline">Základní</td>
+                            </tr>
+                            <tr>
+                                <td>Počet zaparkovaných domén</td>
+                                <td>Neomezeně</td>
+                            </tr>
+                            <tr>
+                                <td>Prostor na disku</td>
+                                <td>1 GB až 20 GB</td>
+                            </tr>
+                            <tr>
+                                <td>Emaily</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Administrace služeb</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Doba zřízení služeb</td>
+                                <td>Po dokončení objednávky</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="headline">Emaily</td>
+                            </tr>
+                            <tr>
+                                <td>Počet emailových schránek</td>
+                                <td>Neomezeně</td>
+                            </tr>
+                            <tr>
+                                <td>Maximální velikost schránky</td>
+                                <td>Neomezeně v rámci objednaného prostoru</td>
+                            </tr>
+                            <tr>
+                                <td>Počet emailových aliasů</td>
+                                <td>Neomezeně</td>
+                            </tr>
+                            <tr>
+                                <td>Počet emailových přesměrování</td>
+                                <td>Neomezeně</td>
+                            </tr>
+                            <tr>
+                                <td>Protokol IMAP</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Protokol POP3</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Protokol SMTP</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Antispam</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Antivir</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Bílá a černá listina</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Automatická odpověď</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Webmail</td>
+                                <td>RoundCube / AfterLogic</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="headline">PHP</td>
+                            </tr>
+                            <tr>
+                                <td>Podpora PHP</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Verze</td>
+                                <td>5.3, 5.4 a 5.5</td>
+                            </tr>
+                            <tr>
+                                <td>Paměť (memory limit)</td>
+                                <td>128 MB</td>
+                            </tr>
+                            <tr>
+                                <td>Maximální doba běhu skriptu</td>
+                                <td>120 sekund</td>
+                            </tr>
+                            <tr>
+                                <td>post_max_size</td>
+                                <td>512 MB</td>
+                            </tr>
+                            <tr>
+                                <td>max_file_uploads</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>FastCGI</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="headline">Databáze</td>
+                            </tr>
+                             <tr>
+                                <td>Verze</td>
+                                <td>MySQL 5.1</td>
+                            </tr>
+                            <tr>
+                                <td>Počet databází</td>
+                                <td>Neomezeno</td>
+                            </tr>
+                            <tr>
+                                <td>Prostor pro databáze</td>
+                                <td>Neomezený</td>
+                            </tr>
+                            <tr>
+                                <td>Maximální počet současných spojení</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Uložiště innoDB</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>phpMyAdmin</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Adminer</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="headline">Ostatní</td>
+                            </tr>
+                             <tr>
+                                <td>Počet FTP účtů</td>
+                                <td>Neomezeně</td>
+                            </tr>
+                            <tr>
+                                <td>FTP do zvoleného adresáře</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Přenos dat</td>
+                                <td>Neomezený</td>
+                            </tr>
+                            <tr>
+                                <td>Periodické spouštění skriptů (CRON)</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Statistiky</td>
+                                <td>AWStats / Webalizer</td>
+                            </tr>
+                            <tr>
+                                <td>Web FTP</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                            <tr>
+                                <td>Pravidelné zálohy</td>
+                                <td><img src="/images/icons/16px/check.png" alt="Ano"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <span class="button-framed" id="moreParams">zobrazit více</span>
+                </div>
+            </div>
+
+            <!-- Our benefits -->
+            <div class="col-md-12">
+                <div class="page-title">
+                    <h2>Proč si zařídit webhosting u nás</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Rychlé načítání prezentací díky SSD</h2>
+                    <img src="/images/icons/64px/rocket.png" alt="SSD disky">
+                    <p>Vaše webová prezentace se díky SSD diskům bude načítat <br>podstatně rychleji.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Přehledná správa služeb</h2>
+                    <img src="/images/icons/64px/browser.png" alt="Best UI">
+                    <p>Veškeré Vaše služby si lehce můžete spravovat přes naši <br>klientskou sekci.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Zálohujeme denně</h2>
+                    <img src="/images/icons/64px/download.png" alt="Backup available">
+                    <p>Data zálohujeme 1x denně a pokud se stane cokoliv, vždy máte <br>možnost data pár kliknutím obnovit.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Lidská podpora</h2>
+                    <img src="/images/icons/64px/megaphone2.png" alt="Support">
+                    <p>Jsme lidi a proto Vám nabízíme lidský přístup a žádné <br>tabulkové řešení.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Jeden prostor</h2>
+                    <img src="/images/icons/64px/piechart.png" alt="Disk space">
+                    <p>Jeden balíček, jeden prostor. Rozdělte si prostor jak potřebujete <br>mezi několika doménami, MySQL databázemi, FTP nebo emaily.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="webhosting-bonus">
+                    <h2>Čas jsou peníze</h2>
+                    <img src="/images/icons/64px/hourglass.png" alt="Time is money">
+                    <p>Zřízení hostingových služeb ihned po dokončení objednávky. <br>Čas jsou peníze, proto Vás nenecháme čekat.</p>
+                </div>
+            </div>
+        </div>
+{% endblock %}

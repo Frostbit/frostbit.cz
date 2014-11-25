@@ -1,0 +1,84 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block content %}
+        <!-- Carousel -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="/images/carousel/microsoft.png" class="top-image" alt="Microsoft"><br />
+                            <span class="title">Celebrate our Gold Partnership.</span>
+                            <p class="description">Enjoy the highest accreditation of Microsoft certified support, <br />from Windows Servers to our award-winning Microsoft Private Cloud.</p>
+                        </div>
+                        <div class="item">
+                            <img src="/images/carousel/microsoft.png" class="top-image" alt="Microsoft"><br />
+                            <span class="title">Celebrate our Silver Partnership.</span>
+                            <p class="description">Enjoy the highest accreditation of Microsoft certified support, <br />from Windows Servers to our award-winning Microsoft Private Cloud.</p>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product">
+                    <h2>Domény</h2>
+                    <img src="/images/products/domain_icon.png" alt="Domény">
+                    <ul>
+                        <li><strong>Přesměrování zdarma</strong> bez potřeby hostingu</li>
+                        <li>Snadná správa <strong>DNS záznamů</strong></li>
+                        <li><strong>Zabezpečení domén</strong> pomocí DNSSEC</li>
+                        <li>Registrace domény <strong>během okamžiku</strong></li>
+                    </ul>
+                    <span class="price-txt">již od <span class="price">199 CZK</span></span>
+                    <a href="#order" class="button-success">Objednat</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product">
+                    <h2>Webhosting</h2>
+                    <img src="/images/products/webhosting_icon.png" alt="Webhosting">
+                    <ul>
+                        <li><strong>Přesměrování zdarma</strong> bez potřeby hostingu</li>
+                        <li>Snadná správa <strong>DNS záznamů</strong></li>
+                        <li><strong>Zabezpečení domén</strong> pomocí DNSSEC</li>
+                        <li>Registrace domény <strong>během okamžiku</strong></li>
+                    </ul>
+                    <span class="price-txt">již od <span class="price">20 CZK</span></span>
+                    <a href="#order" class="button-success">Objednat</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customers -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="customers">
+                    <span class="title">Co o nás trví zákazníci</span>
+                    <div id="carousel2" class="carousel slide" data-ride="carousel2">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <p class="description">Maecenas consectetur libero nunc, sed consequat sem molestie sed. <br>Sed accumsan eros sit amet interdum facilisis. Cras a molestie sapien. Donec sit amet semper metus. Curabitur sit amet neque, <br> nec ligula mattis feugiat in ac lectus. Nunc lobortis mollis diam id tincidunt. </p>
+                                <img src="/images/customers/sign1.png" alt=""><br />
+                                <span class="name">Darth Vader</span><br />
+                                <span class="sub">CEO at death Star, Inc.</span>
+                            </div>
+                            <div class="item">
+                                <p class="description">Maecenas consectetur libero nunc, sed consequat sem molestie sed. Sed accumsan eros sit amet interdum facilisis. Cras a molestie sapien. Donec sit amet semper metus. Curabitur sit amet neque nec ligula mattis feugiat in ac lectus. Nunc lobortis mollis diam id tincidunt. </p>
+                                <img src="/images/customers/sign1.png" alt=""><br />
+                                <span class="name">Darth Vader</span><br />
+                                <span class="sub">CEO at death Star, Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

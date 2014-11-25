@@ -1,0 +1,8 @@
+homepage_index:
+    path:    /
+    defaults:  { _controller: AppBundle:Homepage:index }
+
+# Webhosting
+webhosting_index:
+    path:      /{_locale}/webhosting
+    defaults:  { _controller: AppBundle:Webhosting:index }
