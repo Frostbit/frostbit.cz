@@ -1,0 +1,3 @@
+subreg_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SubregBundle:Default:index }

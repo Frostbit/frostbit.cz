@@ -1,8 +1,16 @@
+subreg:
+    resource: "@SubregBundle/Resources/config/routing.yml"
+    prefix:   /
+
 homepage_index:
     path:    /
     defaults:  { _controller: AppBundle:Homepage:index }
 
 # Webhosting
-webhosting_index:
-    path:      /{_locale}/webhosting
+webhosting:
+    path:      /webhosting
     defaults:  { _controller: AppBundle:Webhosting:index }
+
+webhosting_sale:
+    path:      /webhosting/{sale}
+    defaults:  { _controller: AppBundle:Webhosting:sale}

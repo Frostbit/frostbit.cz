@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 logo">
-                <a href="#"><img src="/images/logo.png" alt="Frostbit.cz"></a>
+                <a href="{{ path("homepage_index") }}"><img src="/images/logo.png" alt="Frostbit.cz"></a>
                 <div class="toggle">
                     <a href="#"><i class="fa fa-bars fa-lg"></i></a>
                 </div>
@@ -29,7 +29,7 @@
             <div class="col-md-7 navigation">
                 <ul>
                     <li><a href="#">Domény</a></li>
-                    <li><a href="/{{ lang }}/webhosting">Webhosting</a></li>
+                    <li><a href="{{ path("webhosting") }}">Webhosting</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@
             </div>
 
             <div class="row bottom">
-                <div class="col-md-6 logo_icon">© 2014 Frostbit.cz</div>
+                <div class="col-md-6 logo_icon">© 2014 Frostbit.cz <a href="{{ path("homepage_index", {"_locale": "cs"}) }}">Czech</a></div>
             </div>
 
         </div>
