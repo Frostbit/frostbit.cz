@@ -17,7 +17,7 @@
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.nouislider.all.js') }}"></script>
 </head>
-<body class="tiny-header">
+<body {% if isHomepage == false %}class="tiny-header"{% endif %}>
     <div class="container">
         <div class="row">
             <div class="col-md-5 logo">

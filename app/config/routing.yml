@@ -8,9 +8,9 @@ homepage_index:
 
 # Webhosting
 webhosting:
-    path:      /webhosting
+    path:      /webhosting/
     defaults:  { _controller: AppBundle:Webhosting:index }
 
 webhosting_sale:
-    path:      /webhosting/{sale}
+    path:      /webhosting/{sale}/
     defaults:  { _controller: AppBundle:Webhosting:sale}

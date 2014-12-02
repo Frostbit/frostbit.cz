@@ -9,8 +9,6 @@
                 <div class="webhosting">
                     <h1>Webhosting</h1>
                     <p class="headline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut malesuada diam, nec lobortis massa. Integer convallis justo lacus, in varius lorem consectetur commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean laoreet vestibulum ornare. In faucibus eleifend ipsum at luctus. Ut semper imperdiet laoreet.</p>
-                    <p>Koncovka {{ domain.tld }} za {{ domain.regPrice }} CZK / rok.</p>
-                    <p>Počet: {{ count }}</p>
                 </div>
             </div>
 
@@ -62,11 +60,12 @@
             <div class="col-md-12">
                 <div class="webhosting-order text-center">
                     <div class="col text-left">
-                        <span class="price-text"><span class="price">30 CZK</span> / měsíc</span>
+                        <span class="price-text">...</span>
                     </div>
                     <div class="col text-right">
                         <input type="text" name="space" class="input-framed" style="width: 80px;" id="space" />
-                        <button type="submit" class="button-framed">
+                        <span id="price"></span>
+                        <button type="submit" class="add-to-cart">
                             <i class="fa fa-plus" style="margin-right: 5px;"></i> Přidat do košíku
                         </button>
                     </div>

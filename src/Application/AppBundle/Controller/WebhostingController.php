@@ -3,25 +3,16 @@
 namespace Application\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Application\AppBundle\Entity\DomainPricelist;
 
 class WebhostingController extends Controller
 {
     public function indexAction()
     {
-    	$domain = $this->getDoctrine()
-    		->getRepository('AppBundle:DomainPricelist')
-    		->find(1);
+        $pricelist = $this->getDoctrine()
+            ->getRepository('AppBundle:WebhostingPricelist')
+            ->findAll();
 
-    	if (!$domain) {
-    		throw $this->createNotFoundException(
-    			'No domain found for id '.$id
-    		);
-    	}
-
-    	$count = 10;
-
-        return $this->render('AppBundle:Webhosting:index.html.twig', array('domain' => $domain, 'count' => $count));
+        return $this->render('AppBundle:Webhosting:index.html.twig', array('pricelist' => $pricelist));
     }
 
     public function saleAction($sale)

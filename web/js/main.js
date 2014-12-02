@@ -21,7 +21,7 @@ $('.slider').noUiSlider({
     start: 2,
     step: 1,
     connect: 'upper',
-    behaviour: 'drag-tap',
+    behaviour: 'none',
             
     range: {
        'min': 1,
@@ -30,6 +30,11 @@ $('.slider').noUiSlider({
 });
 
 $('.slider').Link('lower').to($('#space'));
+
+/* Display price */
+$('#space').keyup(function() {
+    alert('Debug');
+});
 
 $(".slider").noUiSlider_pips({
     mode: 'values',
