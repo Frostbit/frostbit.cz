@@ -8,4 +8,6 @@
 /build/
 /vendor/
 /bin/
+/web/adminer/
+/web/phpmyadmin/
 /composer.phar
