@@ -79,3 +79,8 @@ jms_i18n_routing:
     default_locale: cs
     locales: [en, cs]
     strategy: prefix_except_default
+
+# Services
+services:
+    cache:
+        class: Doctrine\Common\Cache\ApcCache

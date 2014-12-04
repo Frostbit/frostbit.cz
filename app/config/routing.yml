@@ -1,5 +1,5 @@
-subreg:
-    resource: "@SubregBundle/Resources/config/routing.yml"
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /
 
 homepage_index:
@@ -14,3 +14,8 @@ webhosting:
 webhosting_sale:
     path:      /webhosting/{sale}/
     defaults:  { _controller: AppBundle:Webhosting:sale}
+
+# Contact
+contact:
+    path:      /contact/
+    defaults:  { _controller: AppBundle:Contact:index }

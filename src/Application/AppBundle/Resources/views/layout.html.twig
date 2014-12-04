@@ -15,7 +15,8 @@
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/jquery.nouislider.all.js') }}"></script>
+{% block javascript %}{% endblock %}
+{% block headscripts %}{% endblock %}
 </head>
 <body {% if isHomepage == false %}class="tiny-header"{% endif %}>
     <div class="container">
@@ -30,7 +31,7 @@
                 <ul>
                     <li><a href="#">Domény</a></li>
                     <li><a href="{{ path("webhosting") }}">Webhosting</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="{{ path("contact") }}">Kontakt</a></li>
                 </ul>
             </div>
         </div>

@@ -8,9 +8,14 @@ class WebhostingController extends Controller
 {
     public function indexAction()
     {
-        $pricelist = $this->getDoctrine()
-            ->getRepository('AppBundle:WebhostingPricelist')
-            ->findAll();
+        if ($pricelist = $this->get('cache')->fetch('webhostingPricelist')) {
+            $pricelist = unserialize($pricelist);
+        } else {
+            $pricelist = $this->getDoctrine()
+                ->getRepository('AppBundle:WebhostingPricelist')
+                ->findAll();
+            $this->get('cache')->save('webhostingPricelist', serialize($pricelist));
+        }
 
         return $this->render('AppBundle:Webhosting:index.html.twig', array('pricelist' => $pricelist));
     }
