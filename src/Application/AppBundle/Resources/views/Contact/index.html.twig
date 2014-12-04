@@ -9,6 +9,17 @@
 /* Contact / Google maps */
 function initialize() {
     var myLatlng = new google.maps.LatLng(50.053420, 14.341618);
+
+    var stylez = [
+    {
+      featureType: "all",
+      elementType: "all",
+      stylers: [
+        { saturation: -100 }
+      ]
+    }
+    ];
+
     var mapOptions = {
         center: myLatlng, 
         zoom: 16,
@@ -16,6 +27,10 @@ function initialize() {
     };
                 
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+    map.mapTypes.set('tehgrayz', mapType);
+    map.setMapTypeId('tehgrayz');
 
     var marker = new google.maps.Marker({
         position: myLatlng,
@@ -35,18 +50,45 @@ google.maps.event.addDomListener(window, 'load', initialize);
 {% block content %}
         <!-- Contact -->
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3 company-menu">
                 <h2>Frostbit.cz</h2>
+                <ul>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Obchodní podmínky</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Média</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Kariéra</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Novinky</a></li>
+                </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 about-us">
                 <h2>O nás</h2>
+                <img src="/images/contact/company.png" alt="Frostbit.cz" align="right" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at ex at orci eleifend volutpat. Proin diam neque, lobortis sollicitudin malesuada eu, cursus in turpis. Nunc auctor finibus mi vel hendrerit. Etiam vel pretium elit, at tristique nulla. Pellentesque blandit enim sed facilisis faucibus. Maecenas luctus auctor porttitor. Quisque id justo mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque sollicitudin convallis turpis, nec pulvinar ipsum molestie eget. Aliquam pellentesque id orci eu sagittis. Aenean nisi augue, imperdiet in lectus porta, porttitor porttitor felis. </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 company">
                 <h2>Kontakt</h2>
+                <span class="name">Frostbit, s.r.o.</span>
+                <p class="address">Dominova 2464/13 <br /> 158 00, Praha 5 <br /> Česká republika</p>
+
+                <div class="contact">
+                    <span class="tel"><i class="fa fa-envelope-o"></i> info@frostbit.cz</span><br>
+                    <span class="email"><i class="fa fa-phone"></i> +420 774 817 623</span>
+                </div>
+
+                <div class="billing">
+                    <p>IČO: 24868127 <br /> DIČ: CZ24868127 <br /> <i>Městský soud v Praze, Spis. zn.: C.5439</i></p>
+                </div>
+
+                <div class="bank">
+                    <span>Číslo účtu: 54792571/2100</span> <br />
+                    <span class="bank-name">Česká spořitelna, a.s.</span>
+                </div>
             </div>
 
-            <div class="col-md-12">
-                <div id="map-canvas" style="width: 100%;height:350px;"></div>
+            <div class="col-md-12 map">
+                <div id="map-canvas" style="height: 350px;width: 100%;">
+                    <img src="/images/contact/map-top.png" class="top" />
+                </div>
             </div>
+
         </div>
 {% endblock %}

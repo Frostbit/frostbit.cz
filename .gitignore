@@ -11,3 +11,4 @@
 /web/adminer/
 /web/phpmyadmin/
 /composer.phar
+/node_modules/
